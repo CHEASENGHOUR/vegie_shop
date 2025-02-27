@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box !important;
+}
+
+#email-input{
+  width: 100%;
+  padding: 20px 30px !important;
+  border-radius: 20px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#email-input>input{
+  border: none;
+  outline: none;
+
+}
+#email-input:focus-within{
+  box-shadow: 0px 0px 0px 5px rgb(159, 191, 235);
+}
+
+#btn-submit{
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0px !important;
+  padding: 20px 0px !important;
+  background-color: rgb(239, 228, 64);
+  box-shadow: 0px 10px 0px 0px #000;
+}
+#btn-submit:hover{
+  background-color: rgb(203, 194, 60);
+}
+#rem>a{
+  color: rgb(78, 78, 226);
+  text-decoration: underline dotted;
+}
+#rem>a:hover{
+  color: rgb(36, 36, 120);
+  text-decoration: underline ;
+}
