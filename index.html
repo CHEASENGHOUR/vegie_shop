@@ -20,7 +20,7 @@
 
 <body>
 
-  <div class="modal" id="User-log">
+  <div class="modal fade" id="User-log">
     <div class=" modal-dialog modal-dialog-centered">
       <div class=" modal-content">
         <div class=" modal-header">
@@ -65,13 +65,95 @@
     </div>
   </div>
 
+  <div class="offcanvas offcanvas-start" id="menu">
+    <div class="offcanvas-header d-flex justify-content-between">
+      <h5 class="fw-light m-0 p-0">MENU</h5>
+      <a href="" data-bs-dismiss="offcanvas" class="fs-4">
+        <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+      </a>
+    </div>
+    <div class="offcanvas-body py-0 px-4">
+      <ul class="list-unstyled">
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-carrot fs-3"></i>
+          <p class="p-0 m-0 fs-5">Fruits and vegetables</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-egg fs-3"></i>
+          <p class="p-0 m-0 fs-5">Dairy and Eggs</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-bacon fs-3"></i>
+          <p class="p-0 m-0 fs-5">Meat and Poultry</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-shrimp fs-3"></i>
+          <p class="p-0 m-0 fs-5">Seafoods</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-bread-slice fs-3"></i>
+          <p class="p-0 m-0 fs-5">Bakery and Bread</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-cannabis fs-3"></i>
+          <p class="p-0 m-0 fs-5">Canned Goods</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-ice-cream fs-3"></i>
+          <p class="p-0 m-0 fs-5">Frozen Foods</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-bowl-food fs-3"></i>
+          <p class="p-0 m-0 fs-5">Pasta and Rice</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-bowl-rice fs-3"></i>
+          <p class="p-0 m-0 fs-5">Breakfast Foods</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-cookie fs-3"></i>
+          <p class="p-0 m-0 fs-5">Snack and Chips</p>
+        </li>
+        <li class="py-3" data-bs-toggle="collapse" data-bs-target="#beverages"
+          style="border-bottom: 2px dashed silver;">
+          <div class="d-flex gap-4 align-item-center">
+            <i class="fa-solid fa-beer-mug-empty fs-3"></i>
+            <p class="p-0 m-0 fs-5">Beverages</p>
+            <div class="ms-auto dropdown-toggle"></div>
+          </div>
+          <ul class="collapse list-group list-group-flush mt-3" id="beverages">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-carrot fs-3"></i>
+          <p class="p-0 m-0 fs-5">Fruits and vegetables</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-carrot fs-3"></i>
+          <p class="p-0 m-0 fs-5">Fruits and vegetables</p>
+        </li>
+        <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
+          <i class="fa-solid fa-carrot fs-3"></i>
+          <p class="p-0 m-0 fs-5">Fruits and vegetables</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
 
   <div class="container-fluid bg-white p-4">
     <div class="row">
       <div
         class="col-12 col-sm-5 col-lg-2 d-flex align-items-center gap-4 justify-content-center justify-content-sm-start">
         <img src="./img/logo.svg" alt="">
-        <a href="">
+        <a href="" data-bs-target="#menu" data-bs-toggle="offcanvas">
           <i class="fa-solid fa-bars" style="color: #666666;font-size: 24px"></i>
         </a>
       </div>
