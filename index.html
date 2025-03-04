@@ -128,7 +128,6 @@
             <li class="list-group-item">A fourth item</li>
             <li class="list-group-item">And a fifth one</li>
           </ul>
-
         </li>
         <li class="d-flex gap-4 align-item-center py-3" style="border-bottom: 2px dashed silver;">
           <i class="fa-solid fa-carrot fs-3"></i>
@@ -147,6 +146,62 @@
     </div>
   </div>
 
+  <div class="offcanvas offcanvas-end" id="cart">
+    <div class="offcanvas-header">
+      <a href="" data-bs-dismiss="offcanvas" class="ms-auto fs-4">
+        <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-success d-flex  justify-content-between">
+        <h3>Your Cart</h3>
+        <span class="bg-success text-white h-50 px-3 py-1 rounded-circle fs-5">
+          4
+        </span>
+      </div>
+
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="text-secondary ">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="text-secondary ">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="text-secondary ">$2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="text-secondary ">$4</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-startp-3">
+          <div class="ms-2 me-auto">
+            <div class="text-secondary">Total (USD)</div>
+          </div>
+          <span class="text-secondary fw-bold ">$26</span>
+        </li>
+      </ul>
+      <button type="button" class="w-100 bg-success" id="btn-checkout">
+        Continue to checkout
+      </button>
+    </div>
+  </div>
 
   <div class="container-fluid bg-white p-4">
     <div class="row">
@@ -199,7 +254,9 @@
             <i class="fa-regular fa-circle-user" style="color: #000000;"></i>
           </a>
           <a href=""><i class="fa-regular fa-bookmark" style="color: #000000;"></i></a>
-          <a href=""><i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></a>
+          <a href="" data-bs-toggle="offcanvas" data-bs-target="#cart">
+            <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i>
+          </a>
         </div>
       </div>
     </div>

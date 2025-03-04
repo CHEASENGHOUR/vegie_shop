@@ -43,3 +43,16 @@
   color: rgb(36, 36, 120);
   text-decoration: underline ;
 }
+#btn-checkout{
+  padding: 15px;
+  margin: 15px 0px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+#btn-checkout:hover{
+  background-color: orange !important;
+  transition: all .2s ease;
+}
