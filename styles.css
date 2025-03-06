@@ -57,6 +57,8 @@
   transition: all .2s ease;
 }
 #btn-join{
+  padding: 15px;
+  margin: 15px 0px;
   border: none;
   color: white;
   font-size: 20px;
@@ -81,8 +83,20 @@
   padding: 0 !important;
   box-sizing: border-box !important;
   background-image: url(./img/banner-1.jpg);
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  /* background-position: center; */
   background-repeat: no-repeat;
-  display: flex;
+}
+
+#intro-text{
+  height: 79%;
+}
+#intro-box{
+  height: 20%;
+}
+
+@media (min-width: 992px) {
+  #intro-text{
+    width: 50% !important;
+  }
 }
