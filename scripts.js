@@ -35,3 +35,15 @@ const swiper = new Swiper('.swiper', {
     prevEl: '#btn-prev',
   },
 });
+
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  const sc = window.scrollY;
+  if (sc > 250) {
+    nav.style.top = "-300px";
+    nav.style.transition = "all .8s ease";
+  } else {
+    nav.style.top = "0px";
+    nav.style.transition = "all .8s ease";
+  }
+})
