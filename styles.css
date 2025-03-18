@@ -146,23 +146,59 @@
 }
 #btn{
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
 }
 #card-btn{
   display: none !important;
   display: flex;
+  justify-content: center;
   gap: 10px;
-  top: 5px;
+  top: 10px;
   position: absolute;
 }
 #card:hover #card-btn{
   display: flex !important; 
 }
+#count{
+  width: 45px;
+  
+}
+#btn-in{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#btn-up,#btn-down{
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: silver;
+  border: none;
+  border-radius: 3px;
+}
+#btn-up:hover, #btn-down:hover{
+  background-color: green !important;
+  color: white;
+  transition: all .2s ease;
+}
+#btn-up:focus:active, #btn-down:focus:active{
+  background-color: orange !important;
+  transition: all .2s ease;
+}
+
 
 @media (min-width: 992px) {
   /* #intro{
     height: 120vh !important;
   } */
+  #btn-view{
+    font-size: 16px;
+  }
   #intro-text{
     width: 50% !important;
   }

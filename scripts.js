@@ -47,3 +47,18 @@ window.addEventListener('scroll', () => {
     nav.style.transition = "all .8s ease";
   }
 })
+
+
+function increase() {
+  let count = document.getElementById("count");
+  count.value = parseInt(count.value) + 1;
+}
+function decrease() {
+  let count = document.getElementById("count");
+  if (count.value > 0) {
+
+    count.value = parseInt(count.value) - 1;
+  } else {
+    count.value = 0;
+  }
+}
